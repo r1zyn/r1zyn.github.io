@@ -5,7 +5,7 @@ import packageJson from "../package.json";
 export const metadata: Metadata = {
     url:
         process.env.NODE_ENV === "production"
-            ? "https://r1zyn.github.io/powerball-simulator/"
+            ? "https://r1zyn.github.io/"
             : "http://localhost:3000/",
     "theme-color": "#ffffff",
     "site-name": "Made by tncz",

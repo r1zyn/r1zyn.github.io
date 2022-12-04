@@ -1,7 +1,8 @@
+import AOS from "aos";
 import type { AppProps } from "next/app";
 import { Layout } from "../components/core/Layout";
 
-import { init } from "aos";
+import { init } from "../lib/init";
 import { useEffect } from "react";
 
 import "../styles/globals.css";
@@ -9,6 +10,7 @@ import "../styles/globals.css";
 function App({ Component, pageProps }: AppProps) {
 	useEffect((): void => {
 		init();
+		AOS.init();
 	});
 
 	return (
