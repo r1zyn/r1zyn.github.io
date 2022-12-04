@@ -1,0 +1,47 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true,
+    "editor.autoIndent": "advanced",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.maxTokenizationLineLength": 100000,
+    "extensions.ignoreRecommendations": false,
+    "javascript.format.enable": true,
+    "javascript.format.semicolons": "insert",
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.format.enable": true,
+    "typescript.format.semicolons": "insert",
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "json.format.enable": true,
+    "prettier.useEditorConfig": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "javascript.autoClosingTags": true,
+        "javascript.preferences.quoteStyle": "double",
+        "javascript.preferences.jsxAttributeCompletionStyle": "auto",
+        "javascript.suggest.enabled": true,
+        "javascript.suggest.completeJSDocs": true
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features",
+        "typescript.autoClosingTags": true,
+        "typescript.preferences.quoteStyle": "double",
+        "typescript.preferences.jsxAttributeCompletionStyle": "auto",
+        "typescript.suggest.enabled": true,
+        "typescript.suggest.completeJSDocs": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[editorconfig]": {
+        "editor.defaultFormatter": "EditorConfig.EditorConfig"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "vscode.markdown-language-features"
+    }
+}

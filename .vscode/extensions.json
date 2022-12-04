@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "jasonnutter.vscode-codeowners",
+        "mikestead.dotenv",
+        "editorconfig.editorconfig",
+        "ldez.ignore-files",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "mariusschulz.yarn-lock-syntax",
+        "gamunu.vscode-yarn"
+    ]
+}
