@@ -1,0 +1,11 @@
+{
+    "*.ts": [
+        "npm run format"
+    ],
+    "*.tsx": [
+        "npm run format"
+    ],
+    "*.js": [
+        "npm run format"
+    ]
+}
