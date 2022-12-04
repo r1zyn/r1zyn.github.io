@@ -8,7 +8,7 @@ export const Section: NextComponent<SectionProps> = ({
 }: SectionProps): JSX.Element => {
 	return (
 		<div className="w-full h-screen" id={id}>
-			<div className="flex flex-col gap-y-7 section w-full h-full pt-[36vh] pl-[12rem]">
+			<div className="flex flex-col gap-y-7 section w-full h-full pt-[36vh] pl-[12rem] pr-4">
 				{children}
 			</div>
 		</div>

@@ -12,3 +12,7 @@ export const metadata: Metadata = {
     icon: "/img/ad74c83afa9413a01406cbc6c6ba0d4c.jpg",
     keywords: packageJson.keywords
 };
+
+export const urls = {
+    matrix: "https://matrixdev.xyz/"
+};

@@ -39,7 +39,7 @@ export const Track: NextComponent = (): JSX.Element => {
 
 			{!isFirst ? (
 				<div
-					className="opacity-40 pointer-events-none fixed top-0 bottom-[50vh] z-[2] w-[0.5px] left-4 bg-p1 md:left-32 lg:left-40 flex justify-center extend"
+					className="opacity-60 pointer-events-none fixed top-0 bottom-[50vh] z-[2] w-[0.5px] left-4 bg-p1 md:left-32 lg:left-40 flex justify-center extend"
 					style={{
 						background:
 							"linear-gradient(360deg, rgba(53,0,211,1) 0%, rgba(53,0,211,1) 25%, rgba(53,0,211,1) 50%, rgba(15,15,15,0) 100%)",
@@ -55,7 +55,7 @@ export const Track: NextComponent = (): JSX.Element => {
 						transform: "matrix(1, 0, 0, 1, 0, 0)",
 						visibility: "inherit"
 					}}></div>
-			) }
+			)}
 		</>
 	);
 };
