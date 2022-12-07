@@ -112,12 +112,12 @@ const Home: NextPage<MetaOptions> = (): JSX.Element => {
 					className="text-md font-light text-g2 dark:text-white"
 					data-aos="fade-up"
 					data-aos-duration="1000">
-					I began my programming journey during New Zealand&apos;s
-					first COVID-19 lockdown during March 2020, determined to
-					become involved in Discord bot development out of curiosity.
-					Ever since, I&apos;ve learnt full-stack web application,
-					game and app development, as well as many new programming
-					languages.
+					I began my programming journey during a COVID-19 lockdown
+					during March 2020, determined to become involved in Discord
+					bot development out of curiosity. Ever since, I&apos;ve
+					learnt full-stack web application, game and app development,
+					as well as many new programming languages, frameworks and
+					tools.
 				</p>
 			</Section>
 
@@ -142,6 +142,16 @@ const Home: NextPage<MetaOptions> = (): JSX.Element => {
 						)
 					</span>
 				</h1>
+
+				<p
+					className="cursor-pointer text-xl text-g2 dark:text-white"
+					data-aos="fade-up"
+					data-aos-duration="1000"
+					onClick={(): void =>
+						scrollToElement("matrix-about", "smooth")
+					}>
+					{"<Organisation />"}
+				</p>
 			</Section>
 
 			<Section id="matrix-about">
