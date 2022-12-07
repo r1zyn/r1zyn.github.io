@@ -472,3 +472,22 @@
         height: 0;
     }
 }
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    transition-timing-function: ease-out;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}

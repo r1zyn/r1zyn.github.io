@@ -1,3 +1,11 @@
 .glow {
     filter: drop-shadow(0 1px 3px);
 }
+
+.nav {
+    background: linear-gradient(180deg, white 5rem, rgba(255, 255, 255, 0));
+}
+
+.dark .nav {
+    background: linear-gradient(180deg, var(--g2) 5rem, rgba(15, 15, 15, 0));
+}

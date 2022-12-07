@@ -4,6 +4,10 @@ import type { NextComponent } from "../../lib/types";
 export const Track: NextComponent = (): JSX.Element => {
 	const [isFirst, toggleFirst]: [boolean, Dispatch<SetStateAction<boolean>>] =
 		useState<boolean>(true);
+	const [justLoaded, toggleLoaded]: [
+		boolean,
+		Dispatch<SetStateAction<boolean>>
+	] = useState<boolean>(true);
 
 	useEffect((): void => {
 		document.addEventListener("scroll", (): void => {
@@ -14,9 +18,12 @@ export const Track: NextComponent = (): JSX.Element => {
 					2
 			)
 				toggleFirst(true);
-			else toggleFirst(false);
+			else {
+				toggleFirst(false);
+				toggleLoaded(false);
+			}
 		});
-	});
+	}, []);
 
 	return (
 		<>
@@ -35,9 +42,18 @@ export const Track: NextComponent = (): JSX.Element => {
 							visibility: "inherit"
 						}}></div>
 				</div>
+				<div className="pointer-events-none absolute w-[9px] h-[9px] z-[2]">
+					<div
+						className="opacity-100 w-[9px] h-[9px] rounded-[3rem] bg-transparent border-[1px] border-solid border-p1 pulse"
+						style={{
+							visibility: "inherit"
+						}}></div>
+				</div>
 			</div>
 
-			{!isFirst ? (
+			{justLoaded ? (
+				<></>
+			) : !isFirst ? (
 				<div
 					className="opacity-60 pointer-events-none fixed top-0 bottom-[50vh] z-[2] w-[0.5px] left-4 bg-p1 md:left-32 lg:left-40 flex justify-center extend"
 					style={{
